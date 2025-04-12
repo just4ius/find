@@ -98,20 +98,23 @@
   </div>
 
   <footer>
-    <p>&copy; 2025 AISelector. Побудовано в Україні. Монетизується через рекламу та партнерські посилання.</p>
+    <p>&copy; 2025 FindMyAI. Побудовано в Україні. Монетизується через рекламу та партнерські посилання.</p>
   </footer>
 
   <script>
     function searchAll() {
-      const query = document.getElementById('searchInput').value.toLowerCase();
-  
-      // Пошук по картках AI
+      let query = document.getElementById('searchInput').value.toLowerCase();
+
+      const keywords_video = ["монтажувати", "відео", "кліпи", "шортси", "shorts", "tiktok"];
+      if (keywords_video.some(keyword => query.includes(keyword))) {
+        query = "відео";
+      }
+
       document.querySelectorAll('.card').forEach(card => {
         const text = card.innerText.toLowerCase();
         card.style.display = text.includes(query) ? 'flex' : 'none';
       });
-  
-      // Пошук по блогу
+
       document.querySelectorAll('.blog-post').forEach(post => {
         const text = post.innerText.toLowerCase();
         post.style.display = text.includes(query) ? 'block' : 'none';
