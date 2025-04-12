@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+}
+
+body > :not(header) {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+    background: #f8f9fb;
+    color: #1e1e1e;
+}
+
+h1 > :not(header) {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-top: 2rem;
+}
+
+a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+header {
+    font-family: 'Inter', sans-serif;
+    padding: 2rem;
+    background: linear-gradient(135deg, #4f46e5, #6d28d9);
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
