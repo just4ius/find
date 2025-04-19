@@ -26,8 +26,8 @@
 </head>
 <body>
   <header>
-    <h1><a href="/" style="text-decoration: none; color: inherit; font-size: 4rem;">FindMyAI</a></h1>
-    <p><a href="/" style="text-decoration: none; color: inherit;">Top AI tools + Blog with articles to inspire you</a></p>
+    <h1><a href="/en" style="text-decoration: none; color: inherit; font-size: 4rem;">FindMyAI</a></h1>
+    <p><a href="/en" style="text-decoration: none; color: inherit;">Top AI tools + Blog with articles to inspire you</a></p>
   </header>
 
   <!-- Site Search -->
@@ -143,9 +143,9 @@
     function searchAll() {
       let query = document.getElementById('searchInput').value.toLowerCase();
 
-      const keywords_video = ["montage", "edit", "video", "clips", "shorts", "tiktok"];
+      const keywords_video = ["montage", "edit", "reals", "clips", "shorts", "tiktok"];
       if (keywords_video.some(keyword => query.includes(keyword))) {
-        query = "відео";
+        query = "video";
       }
 
       document.querySelectorAll('.card').forEach(card => {
