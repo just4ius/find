@@ -1,1 +1,4 @@
 title: FindMyAI
+url: "https://findmyai.fun"
+plugins:
+  - jekyll-sitemap
