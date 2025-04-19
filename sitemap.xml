@@ -1,23 +1,11 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://findmyai.fun/</loc>
-    <lastmod>2025-04-19</lastmod>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://findmyai.fun/blog/top-ai-youtube.html</loc>
-    <lastmod>2025-04-19</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://findmyai.fun/blog/zarobitok-z-ai.html</loc>
-    <lastmod>2025-04-19</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://findmyai.fun/blog/ai-dlya-dyzayneriv.html</loc>
-    <lastmod>2025-04-19</lastmod>
-    <priority>0.80</priority>
-  </url>
+    {% for page in site.pages %}
+    <url>
+        <loc>https://example.com{{ page.url | remove: 'index.html' }}</loc>
+    </url>
+    {% endfor %}
 </urlset>
