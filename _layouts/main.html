@@ -151,9 +151,9 @@
         query = "відео";
       }
 
-      document.querySelectorAll('.card hidden').forEach(card hidden => {
-        const text = card hidden.innerText.toLowerCase();
-        card hidden.style.display = text.includes(query) ? 'flex' : 'none';
+      document.querySelectorAll('.card.hidden').forEach(cardHidden => {
+        const text = cardHidden.innerText.toLowerCase();
+        cardHidden.style.display = text.includes(query) ? 'flex' : 'none';
       });
 
       document.querySelectorAll('.blog-post').forEach(post => {
