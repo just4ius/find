@@ -125,18 +125,24 @@ header p {
 }
 
 button#showAllBtn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+    margin: 2rem auto 0;
+    display: block;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #4f46e5, #6d28d9);
+    color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
 }
 
 button#showAllBtn:hover {
-    background-color: #0056b3;
+    background: linear-gradient(135deg, #4338ca, #5b21b6);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .blog-section h2 {
