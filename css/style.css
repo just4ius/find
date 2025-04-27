@@ -126,6 +126,9 @@ header p {
     color: #fff;
     text-decoration: none;
     border-radius: 8px;
+    transition: 0.3s;
+    border: none;
+    display: flex;
 }
 
 #showAllBtn:hover {
