@@ -7,6 +7,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 .scroll-container {
   height: 90vh;
   overflow-y: scroll;
@@ -63,6 +64,10 @@ header p {
     font-size: 1.2rem;
 }
 
+a {
+    
+}
+
 .container {
     max-width: 1200px;
     margin: 2rem auto;
@@ -103,7 +108,7 @@ header p {
     flex-grow: 1;
 }
 
-.card a {
+.card a, a {
     margin-top: auto;
     align-self: start;
     padding: 0.5rem 1rem;
