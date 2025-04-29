@@ -125,7 +125,7 @@
         query = "відео";
       }
 
-      document.querySelectorAll('.card.hidden').forEach(cardHidden => {
+      document.querySelectorAll('.card').forEach(cardHidden => {
         const text = cardHidden.innerText.toLowerCase();
         cardHidden.style.display = text.includes(query) ? 'flex' : 'none';
       });
