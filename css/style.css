@@ -136,6 +136,16 @@ header p {
     box-shadow: 0 10px 16px rgba(0, 0, 0, 0.08);
 }
 
+.mainPageSections {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
 .blog-section h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
