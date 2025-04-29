@@ -136,14 +136,41 @@ header p {
     box-shadow: 0 10px 16px rgba(0, 0, 0, 0.08);
 }
 
-.mainPageSections {
+.mainPageContainer {
     display: flex;
     flex-direction: column;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.mainPageSections {
     background: #fff;
     border-radius: 16px;
     padding: 1.5rem;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
     transition: 0.3s;
+}
+
+.section-wrapper {
+    display: flex;
+}
+
+.section-wrapper.left {
+    justify-content: flex-start;
+    padding-right: 50px;
+}
+
+.section-wrapper.right {
+    justify-content: flex-end;
+    padding-left: 50px;
+}
+
+@media (max-width: 768px) {
+    .section-wrapper {
+        justify-content: center;
+        padding: 0;
+    }
 }
 
 .blog-section h2 {
