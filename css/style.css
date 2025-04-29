@@ -104,7 +104,7 @@ header p {
     flex-grow: 1;
 }
 
-.card a, a {
+.card a, .asimple {
     margin-top: auto;
     align-self: start;
     padding: 0.5rem 1rem;
