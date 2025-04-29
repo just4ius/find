@@ -2,7 +2,6 @@
 <html lang="en" class="scroll-container">
 <head>
   <meta charset="UTF-8">
-  {% seo %}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FindMyAI | Blog</title>
   <meta name="description" content="Find and select the best AI services for text, images, video, marketing, and automation. Discover the world of artificial intelligence with our catalog!">
@@ -119,6 +118,30 @@
     <p>&copy; 2025 FindMyAI. Developed in Ukraine.</p>
   </footer>
 
+  <script>
+    function searchAll() {
+      let query = document.getElementById('searchInput').value.toLowerCase();
+
+      const keywords_video = ["montage", "video", "clips", "shorts", "reels", "tiktok"];
+      if (keywords_video.some(keyword => query.includes(keyword))) {
+        query = "video";
+      }
+
+      document.querySelectorAll('.card').forEach(cardHidden => {
+        const text = cardHidden.innerText.toLowerCase();
+        cardHidden.style.display = text.includes(query) ? 'flex' : 'none';
+      });
+
+      document.querySelectorAll('.blog-post').forEach(post => {
+        const text = post.innerText.toLowerCase();
+        post.style.display = text.includes(query) ? 'block' : 'none';
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.querySelector(".scroll-container");
+    });
+  </script>
   <script>
     const userLang = navigator.language || navigator.userLanguage; 
     if (userLang.startsWith('uk')) {
